@@ -10,7 +10,7 @@ import { Calendar } from 'lucide-react';
 
 const getNewsData = async () => {
   try {
-    const res = await fetch('http://localhost:3000/api/news', {
+    const res = await fetch('https://mcut.vercel.app/api/news', {
       next:{
         revalidate: 5
       }

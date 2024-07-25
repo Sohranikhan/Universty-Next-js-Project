@@ -5,7 +5,7 @@ import connect from '../../utils/connect'
 const getPrograms = async()=>{
   try {
     await connect()
-    const res = await fetch('http://localhost:3000/api/program',{
+    const res = await fetch('https://mcut.vercel.app/api/program',{
       cache:'force-cache'
     })
     const data = await res.json()

@@ -8,7 +8,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 const getCampusLife = async(slug)=>{
-    const res = await fetch(`http://localhost:3000/api/campuslife/${slug}`,{
+    const res = await fetch(`https://mcut.vercel.app/api/campuslife/${slug}`,{
       next:{
         revalidate: 1
       }

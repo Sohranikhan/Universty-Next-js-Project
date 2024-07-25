@@ -9,7 +9,7 @@ import Link from "next/link";
 // Function to fetch news data by slug
 const getNewsBySlug = async (slug) => {
   try {
-  const res = await fetch(`http://localhost:3000/api/news/${slug}`, {
+  const res = await fetch(`https://mcut.vercel.app/api/news/${slug}`, {
     next: {
       revalidate: 1,
     },

@@ -7,7 +7,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 const getAboutCache = async(slug)=>{
-    const res = await fetch(`http://localhost:3000/api/aboutmcut/${slug}`,{
+    const res = await fetch(`https://mcut.vercel.app/api/aboutmcut/${slug}`,{
       next:{
         revalidate: 1
       }

@@ -6,7 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 const getOfficeCache = async(slug)=>{
-    const res = await fetch(`http://localhost:3000/api/administration/${slug}`,{
+    const res = await fetch(`https://mcut.vercel.app/api/administration/${slug}`,{
       next:{
         revalidate: 1
       }

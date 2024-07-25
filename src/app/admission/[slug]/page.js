@@ -8,7 +8,7 @@ import Link from "next/link"
 
 const getAdmissionCache = async(slug)=>{
 try {
-  const res = await fetch(`http://localhost:3000/api/admission/${slug}`,{
+  const res = await fetch(`https://mcut.vercel.app/api/admission/${slug}`,{
     next:{
       revalidate: 1
     }

@@ -62,7 +62,7 @@ const form = useForm({
 
 const onSubmit = async(value) =>{
   setLoading(true)
-  const response =await fetch('http://localhost:3000/api/admission/meritlist',{
+  const response =await fetch('https://mcut.vercel.app/api/admission/meritlist',{
     method: 'POST',
     body: JSON.stringify({...value, pdfUrl})
   })
@@ -78,7 +78,7 @@ const onSubmit = async(value) =>{
 
 const onUpdate = async(value) =>{
   setLoading(true)
-  const response =await fetch('http://localhost:3000/api/admission/meritlist',{
+  const response =await fetch('https://mcut.vercel.app/api/admission/meritlist',{
     method: 'PATCH',
     body: JSON.stringify({...value, pdfUrl, id})
   })

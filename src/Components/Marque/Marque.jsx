@@ -3,7 +3,7 @@ import './Marque.css';
 
 const fetchNews = async () => {
   try {
-    const res = await fetch('http://localhost:3000/api/news', {
+    const res = await fetch('https://mcut.vercel.app/api/news', {
       next: {
         revalidate: 1, // Revalidate data every 1 minute for faster updates
       }

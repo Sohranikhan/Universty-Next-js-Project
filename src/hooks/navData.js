@@ -4,7 +4,7 @@ export const useAboutMcut = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/aboutmcut', {
+    fetch('https://mcut.vercel.app/api/aboutmcut', {
       cache: 'force-cache'
     })
       .then((res) => res.json())
@@ -18,7 +18,7 @@ export const useFaculties = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/faculty', {
+    fetch('https://mcut.vercel.app/api/faculty', {
       cache: 'force-cache'
     })
       .then((res) => res.json())
@@ -32,7 +32,7 @@ export const useCampusLife = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/campuslife', {
+    fetch('https://mcut.vercel.app/api/campuslife', {
       cache: 'force-cache'
     })
       .then((res) => res.json())
@@ -46,7 +46,7 @@ export const useAdministration = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/administration', {
+    fetch('https://mcut.vercel.app/api/administration', {
       cache: 'force-cache'
     })
       .then((res) => res.json())
@@ -60,7 +60,7 @@ export const useAdmission = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/admission', {
+    fetch('https://mcut.vercel.app/api/admission', {
       cache: 'force-cache'
     })
       .then((res) => res.json())

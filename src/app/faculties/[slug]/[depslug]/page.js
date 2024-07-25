@@ -9,7 +9,7 @@ import Marq from "../../../../Components/Marque/Marque"
 
 const getDepartmentById = async(depslug)=>{
     await connect()
-      const res = await fetch(`http://localhost:3000/api/department/${depslug}`,{
+      const res = await fetch(`https://mcut.vercel.app/api/department/${depslug}`,{
         next:{
             revalidate: 60
         }

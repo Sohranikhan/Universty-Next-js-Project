@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const getMeritLists = async () => {
   try {
-    const res = await fetch(`http://localhost:3000/api/admission/meritlist`, {
+    const res = await fetch(`https://mcut.vercel.app/api/admission/meritlist`, {
       cache:'no-cache'
     });
     const data = await res.json();

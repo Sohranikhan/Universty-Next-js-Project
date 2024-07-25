@@ -8,7 +8,7 @@ const TableComponenet = () => {
     useEffect(() => {
       const fetchMeritList = async () => {
         try {
-          const res = await fetch('http://localhost:3000/api/admission/meritlist');
+          const res = await fetch('https://mcut.vercel.app/api/admission/meritlist');
           const data = await res.json()
           setMeritList(data);
         } catch (error) {

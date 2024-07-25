@@ -65,7 +65,7 @@ export default function NewForm({ name, email, department, researchPapers, socia
 
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/department',{
+    fetch('https://mcut.vercel.app/api/department',{
       cache: 'no-store'
     })
       .then(response => response.json())
@@ -93,7 +93,7 @@ export default function NewForm({ name, email, department, researchPapers, socia
 
   const onSubmit = async (value) => {
 setLoading(true)
-    const response = await fetch('http://localhost:3000/api/staff', {
+    const response = await fetch('https://mcut.vercel.app/api/staff', {
       method: 'POST',
       body: JSON.stringify({ ...value, socialMedia: tags, slug: slugify(value.name), researchPapers: paperArr })
     })

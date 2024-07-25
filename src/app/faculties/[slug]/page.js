@@ -8,7 +8,7 @@ import FacltyHero from "../../../Components/FacltyHero/FacltyHero"
 
 const getFacultyById = async(slug)=>{
     await connect()
-      const res = await fetch(`http://localhost:3000/api/faculty/${slug}`,{
+      const res = await fetch(`https://mcut.vercel.app/api/faculty/${slug}`,{
         cache: 'no-cache'
       })
       const data = await res.json()

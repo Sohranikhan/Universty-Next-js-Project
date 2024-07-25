@@ -12,7 +12,7 @@ import { Suspense } from 'react'
 const getFacultyCache = async()=>{
   await connect()
   try {
-    const res = await fetch('http://localhost:3000/api/faculty',{
+    const res = await fetch('https://mcut.vercel.app/api/faculty',{
       next:{
         revalidate: 1
       }

@@ -9,7 +9,7 @@ import Image from "next/image"
 
 const getStaff = async(staffslug)=>{
     await connect()
-      const res = await fetch(`http://localhost:3000/api/staff/${staffslug}`,{
+      const res = await fetch(`https://mcut.vercel.app/api/staff/${staffslug}`,{
         next:{
             revalidate: 60
         }
