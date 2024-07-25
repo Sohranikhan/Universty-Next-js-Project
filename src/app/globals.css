@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  :root {
+    --background: 180 67% 99%;
+    /* Light Background */
+    --foreground: 180 64% 2%;
+    /* Dark Text */
+    --card: 180 67% 99%;
+    /* Light Card Background */
+    --card-foreground: 180 64% 2%;
+    /* Dark Card Text */
+    --popover: 180 67% 99%;
+    /* Light Popover Background */
+    --popover-foreground: 180 64% 2%;
+    /* Dark Popover Text */
+    --primary: 25 100% 45%;
+    /* Bright Orange Primary */
+    --primary-foreground: 180 67% 99%;
+    /* Light Text on Primary */
+    --secondary: 156 33% 47%;
+    /* Muted Greenish-Teal Secondary */
+    --secondary-foreground: 180 64% 2%;
+    /* Dark Text on Secondary */
+    --muted: 156 33% 47%;
+    /* Muted Greenish-Teal */
+    --muted-foreground: 180 64% 2%;
+    /* Dark Text on Muted */
+    --accent: 154 88% 25%;
+    /* Deep Green Accent */
+    --accent-foreground: 180 67% 99%;
+    /* Light Text on Accent */
+    --destructive: 0 84.2% 60.2%;
+    /* Destructive Color (unchanged) */
+    --destructive-foreground: 180 67% 99%;
+    /* Light Text on Destructive */
+    --border: 180 64% 2%;
+    /* Dark Border */
+    --input: 0, 0%, 24%;
+    /* Light Input Background */
+    --ring: 25 100% 45%;
+    /* Bright Orange Ring */
+    --radius: 0.5rem;
+    /* Border Radius */
+  }
+
+  .dark {
+    --background: 180 64% 2%;
+    /* Very Dark Background */
+    --foreground: 180 67% 99%;
+    /* Light Text */
+    --card: 180 64% 2%;
+    /* Very Dark Card Background */
+    --card-foreground: 180 67% 99%;
+    /* Light Card Text */
+    --popover: 180 64% 2%;
+    /* Very Dark Popover Background */
+    --popover-foreground: 180 67% 99%;
+    /* Light Popover Text */
+    --primary: 25 100% 45%;
+    /* Bright Orange Primary */
+    --primary-foreground: 180 67% 99%;
+    /* Light Text on Primary */
+    --secondary: 156 33% 47%;
+    /* Muted Greenish-Teal Secondary */
+    --secondary-foreground: 180 67% 99%;
+    /* Light Text on Secondary */
+    --muted: 156 33% 47%;
+    /* Muted Greenish-Teal */
+    --muted-foreground: 180 67% 99%;
+    /* Light Text on Muted */
+    --accent: 154 88% 25%;
+    /* Deep Green Accent */
+    --accent-foreground: 180 67% 99%;
+    /* Light Text on Accent */
+    --destructive: 0 72.2% 50.6%;
+    /* Destructive Color (unchanged) */
+    --destructive-foreground: 180 67% 99%;
+    /* Light Text on Destructive */
+    --border: 156 33% 47%;
+    /* Muted Greenish-Teal Border */
+    --input: 180 64% 2%;
+    /* Very Dark Input Background */
+    --ring: 25 100% 45%;
+    /* Bright Orange Ring */
+  }
+
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Typography */
+h1{
+  font-size: 1.9rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+h1,h2,h3,h4{
+  scroll-margin: 5rem /* 80px */;
+  letter-spacing: -0.015em;
+}
+
+h2,h3,h4{
+  font-weight: 600;
+}
+h2{
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  padding-bottom: 8px;
+}
+h3{
+  font-size: 1.3rem /* 24px */;
+  line-height: 2rem /* 32px */;
+  scroll-margin: 5rem /* 80px */;
+}
+h4{
+  font-size: 1.1rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  scroll-margin: 5rem /* 80px */;
+}
+p{
+  line-height: 1.75rem /* 28px */;
+}
+
+a{
+  font-size: 14px;
+}
+
+tr:nth-child(even){
+  background-color: #e5e5e5;
+}
+.htmldiv h2{
+  color: var(--primary);
+}
+
+.blurDiv::before{
+content: '';
+position: absolute;
+top: 0%;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 25, 1, 0.506);
+backdrop-filter: blur(1px);
+z-index: 0;
+}
+
+.quill {
+  padding: 50px 0;
+  min-height: 400px;
+}
+
+.ql-toolbar.ql-snow {
+  position: sticky;
+  top: 6rem;
+  z-index: 40;
+  background: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+  .ql-toolbar.ql-snow {
+    top: 3rem ;
+  }
+}
+.ql-toolbar.ql-snow::-webkit-scrollbar {
+  display: none;
+}
+
+.ql-editor {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+}
+
+.quill>.ql-container>.ql-editor.ql-blank::before {
+  color: rgb(57, 57, 57);
+}
+
+.loader {
+  animation: load 1s infinite forwards;
+}
+
+
+@keyframes load {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px){
+  h1{
+    font-size: 1.8rem;
+  }
+}

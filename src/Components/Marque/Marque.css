@@ -1,0 +1,15 @@
+.aniBtn{
+    animation: fillColor 5s infinite;
+}
+
+@keyframes fillColor {
+    0%{
+        filter: hue-rotate(0deg);
+        background: red;
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        background: rgb(255, 108, 3);
+
+    }
+}
