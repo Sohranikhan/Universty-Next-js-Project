@@ -7,7 +7,6 @@ Welcome to the **University Website** project, a comprehensive platform designed
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Live Demo](#live-demo)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -35,10 +34,6 @@ The **University Website** serves as a central hub for students, faculty, and st
 - **React.js**: For building a responsive and interactive user interface.
 - **Tailwind CSS**: For styling and creating a visually appealing layout.
 - **DaisyUI**: A component library for Tailwind CSS to enhance UI design.
-
-## Live Demo
-
-Check out the live demo of the project [here](https://your-live-demo-link.com).
 
 ## Getting Started
 
