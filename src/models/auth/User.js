@@ -16,7 +16,7 @@ const userSchema = new Schema({
   },
   isadmin:{
     type: Boolean,
-    default: false
+    default: true
   },
   role: {
     type: String,
