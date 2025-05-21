@@ -2,6 +2,9 @@
 
 Welcome to the **University Website** project, a comprehensive platform designed to facilitate information management for universities. This project features an **admin dashboard** that allows administrators to perform CRUD (Create, Read, Update, Delete) operations on faculties, departments, staff, and programs. Additionally, it includes a **job portal** for students and staff to explore job opportunities.
 
+![Screenshot_18-5-2025_121457_mcut vercel app](https://github.com/user-attachments/assets/14a624a1-356f-45fe-825b-d744f94d57e6)
+
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -9,6 +12,9 @@ Welcome to the **University Website** project, a comprehensive platform designed
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Installation](#installation)
+
+![screenshot-1747795801012](https://github.com/user-attachments/assets/42a09c65-2e35-4fd3-a5eb-5c482f92e2e5)
+
 - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
