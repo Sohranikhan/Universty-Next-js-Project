@@ -20,6 +20,9 @@ Welcome to the **University Website** project, a comprehensive platform designed
 - [Contributing](#contributing)
 - [License](#license)
 
+
+![Screenshot_21-5-2025_75029_mcut vercel app](https://github.com/user-attachments/assets/312fb4f8-f856-40ae-bdca-fec7bbe7cd13)
+
 ## Overview
 
 The **University Website** serves as a central hub for students, faculty, and staff, providing essential information about university programs, departments, and job opportunities. The **admin dashboard** empowers university administrators to manage the website content efficiently, ensuring that all information is up-to-date and accessible.
